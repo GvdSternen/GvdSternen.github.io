@@ -71,6 +71,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-clash节点全部超时问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2026-07-24T07:57:37.000Z" itemprop="datePublished">2026-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/">clash节点全部超时问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>本超时问题通过将本机时间校准至北京时间即可解决。</p>
+<hr>
+<h2 id="节点超时问题表现"><a href="#节点超时问题表现" class="headerlink" title="节点超时问题表现"></a>节点超时问题表现</h2><p>进行连接测试，所有节点都显示timeout（极少数时间有个别节点可以连接，但延迟高达几千ms）。<br><img src="/.%5Cclash%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="屏幕截图"><br><strong>在我遇到的问题中，特别地可以看到direct节点也timeout。</strong></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>根据网络经验贴，我依次确认了：</p>
+<ol>
+<li>节点服务器可用（作者换了个设备可以正常使用clash</li>
+<li>clash客户端完整，文件没有缺失</li>
+</ol>
+<p>最终发现是系统时间的问题，即：</p>
+<ul>
+<li>电脑时间与服务器不一致</li>
+</ul>
+<p>根据时间校准网站（ <a target="_blank" rel="noopener" href="http://time.syiban.com/xiaozhun.php">http://time.syiban.com/xiaozhun.php</a> ）校准时间后问题解决。</p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><p>根据帖子（ <a target="_blank" rel="noopener" href="https://sobaigu.com/clash-timeout-failed-by-dns.html">https://sobaigu.com/clash-timeout-failed-by-dns.html</a> ）所述，此类问题还有可能是内置 DNS问题引起，感谢帖子作者，本贴作为学习贴特此存档。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/" data-id="cmryocgkm0000aos5d7c6e4fh" data-title="clash节点全部超时问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-我的第一篇博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/06/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
@@ -176,7 +230,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li></ul>
     </div>
   </div>
 
@@ -186,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a>
+      <a href="/tags/clash/" style="font-size: 10px;">clash</a> <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a>
     </div>
   </div>
 
@@ -195,7 +249,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">July 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a></li></ul>
     </div>
   </div>
 
@@ -206,6 +260,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/">clash节点全部超时问题</a>
+          </li>
         
           <li>
             <a href="/2026/06/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
