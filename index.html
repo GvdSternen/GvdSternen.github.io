@@ -71,6 +71,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-从疑问到理解-目标检测AP指标学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2026-10-14T04:00:00.000Z" itemprop="datePublished">2026-10-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">从疑问到理解：目标检测 AP 指标学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在阅读 RGB–Thermal 微小目标检测论文 ProG-Net 时，我遇到了一串看似简单、实际很容易混淆的问题：AP、AP50、AP75 到底有什么区别？匹配阈值是什么？一个与真实目标完全不重合的预测框，为什么还要参与计算？双模态模型的结果为什么又分成 Visible 和 Thermal？</p>
+<p>这篇文章整理了我沿着这些问题逐步理解 AP 的过程。先从一次检测怎样判对错讲起，再手算一个 AP50，最后回到数学定义和论文结果表。后面的数字例子均为教学示例，不是论文实验结果。</p>
+        
+          <p class="article-more-link">
+            <a href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cmv7zct330000hss5dw525ji9" data-title="从疑问到理解：目标检测 AP 指标学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AP/" rel="tag">AP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RGBT-Tiny/" rel="tag">RGBT-Tiny</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-clash节点全部超时问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/" class="article-date">
@@ -224,13 +274,20 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a></li></ul>
+    </div>
+  </div>
+
 
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AP/" rel="tag">AP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RGBT-Tiny/" rel="tag">RGBT-Tiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li></ul>
     </div>
   </div>
 
@@ -240,7 +297,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/clash/" style="font-size: 10px;">clash</a> <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a>
+      <a href="/tags/AP/" style="font-size: 10px;">AP</a> <a href="/tags/RGBT-Tiny/" style="font-size: 10px;">RGBT-Tiny</a> <a href="/tags/clash/" style="font-size: 10px;">clash</a> <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a> <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" style="font-size: 10px;">目标检测</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a>
     </div>
   </div>
 
@@ -249,7 +306,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">July 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/10/">October 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">July 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a></li></ul>
     </div>
   </div>
 
@@ -260,6 +317,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">从疑问到理解：目标检测 AP 指标学习笔记</a>
+          </li>
         
           <li>
             <a href="/2026/07/24/clash%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98/">clash节点全部超时问题</a>
