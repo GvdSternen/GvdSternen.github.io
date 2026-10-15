@@ -71,6 +71,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-phyfusion-physical-priors" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/10/15/phyfusion-physical-priors/" class="article-date">
+  <time class="dt-published" datetime="2026-10-15T07:20:00.000Z" itemprop="datePublished">2026-10-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/10/15/phyfusion-physical-priors/">从疑问到理解：PhyFusion 的物理先验与 E/T/V 自监督提取</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>阅读 PhyFusion 时，我最困惑的是：文章详细列出了可见光 R&#x2F;L 分解的损失，却没有同样详细地解释红外 E&#x2F;T&#x2F;V 到底怎样提取。进一步看代码，又冒出两个问题：V 为什么需要四个通道，而 E、T 各只需要一个？</p>
+<p>这篇笔记沿着这些疑问，把网络预测、物理重建和融合用途串起来。下文的数值例子只用于解释计算，不是论文实验结果。</p>
+        
+          <p class="article-more-link">
+            <a href="/2026/10/15/phyfusion-physical-priors/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://gvdsternen.github.io/2026/10/15/phyfusion-physical-priors/" data-id="cmv97p1or00002ws50whtcd91" data-title="从疑问到理解：PhyFusion 的物理先验与 E/T/V 自监督提取" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PhyFusion/" rel="tag">PhyFusion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E8%9E%8D%E5%90%88/" rel="tag">图像融合</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%A2%E5%A4%96%E5%9B%BE%E5%83%8F/" rel="tag">红外图像</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag">自监督学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" rel="tag">论文阅读</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-从疑问到理解-目标检测AP指标学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
@@ -287,7 +337,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AP/" rel="tag">AP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RGBT-Tiny/" rel="tag">RGBT-Tiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AP/" rel="tag">AP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PhyFusion/" rel="tag">PhyFusion</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RGBT-Tiny/" rel="tag">RGBT-Tiny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clash/" rel="tag">clash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A0%E4%BD%9C/" rel="tag">习作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E8%9E%8D%E5%90%88/" rel="tag">图像融合</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%A2%E5%A4%96%E5%9B%BE%E5%83%8F/" rel="tag">红外图像</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag">自监督学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" rel="tag">论文阅读</a></li></ul>
     </div>
   </div>
 
@@ -297,7 +347,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AP/" style="font-size: 10px;">AP</a> <a href="/tags/RGBT-Tiny/" style="font-size: 10px;">RGBT-Tiny</a> <a href="/tags/clash/" style="font-size: 10px;">clash</a> <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a> <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" style="font-size: 10px;">目标检测</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a>
+      <a href="/tags/AP/" style="font-size: 10px;">AP</a> <a href="/tags/PhyFusion/" style="font-size: 10px;">PhyFusion</a> <a href="/tags/RGBT-Tiny/" style="font-size: 10px;">RGBT-Tiny</a> <a href="/tags/clash/" style="font-size: 10px;">clash</a> <a href="/tags/%E4%B9%A0%E4%BD%9C/" style="font-size: 10px;">习作</a> <a href="/tags/%E5%9B%BE%E5%83%8F%E8%9E%8D%E5%90%88/" style="font-size: 10px;">图像融合</a> <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" style="font-size: 10px;">目标检测</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a> <a href="/tags/%E7%BA%A2%E5%A4%96%E5%9B%BE%E5%83%8F/" style="font-size: 10px;">红外图像</a> <a href="/tags/%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">自监督学习</a> <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" style="font-size: 10px;">论文阅读</a>
     </div>
   </div>
 
@@ -317,6 +367,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/10/15/phyfusion-physical-priors/">从疑问到理解：PhyFusion 的物理先验与 E/T/V 自监督提取</a>
+          </li>
         
           <li>
             <a href="/2026/10/14/%E4%BB%8E%E7%96%91%E9%97%AE%E5%88%B0%E7%90%86%E8%A7%A3-%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8BAP%E6%8C%87%E6%A0%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">从疑问到理解：目标检测 AP 指标学习笔记</a>
